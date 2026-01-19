@@ -1,0 +1,15 @@
+package com.example.analytics_service;
+
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@Disabled
+@SpringBootTest
+class AnalyticsServiceApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

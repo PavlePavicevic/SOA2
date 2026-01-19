@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package notification;
+
+service NotificationService{
+    rpc NotifyEvent (EventMessage) returns (NotifyResponse);
+}
+
+message EventMessage{
+    string type = 1;
+    string deviceId = 2;
+    double value = 3;
+    string location = 4;
+    int64 ts = 5;
+}
+
+message NotifyResponse {
+    bool ok =1;
+    string message =2;
+}

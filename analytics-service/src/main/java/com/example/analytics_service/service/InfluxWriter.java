@@ -27,7 +27,7 @@ public class InfluxWriter {
     }
 
     public void write(Event e) {
-        System.err.println("### INFLUX WRITE HIT ###");
+        
         Point p = Point.measurement("detected_event")
                 .addTag("deviceId", e.deviceId)
                 .addTag("type", e.type)
